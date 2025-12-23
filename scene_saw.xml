@@ -1,0 +1,110 @@
+<mujoco model="scene_saw">
+  <compiler angle="degree" inertiafromgeom="true"/>
+  <option timestep="0.002" gravity="0 0 -9.81"/>
+
+  <include file="rover.xml"/>
+
+  <worldbody>
+    <geom name="floor" type="plane" size="30 30 0.1" pos="0 0 0"
+          contype="1" conaffinity="1"
+          friction="1.2 0.01 0.0001"
+          rgba="0.88 0.88 0.88 1"/>
+
+    <body name="saw" pos="0 0 0">
+
+      <geom type="box" pos="0.60 0 0.00345" size="0.06 1.0 0.00345"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="0.72 0 0.00466" size="0.06 1.0 0.00466"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="0.84 0 0.00587" size="0.06 1.0 0.00587"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="0.96 0 0.00707" size="0.06 1.0 0.00707"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="1.08 0 0.00828" size="0.06 1.0 0.00828"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="1.20 0 0.00949" size="0.06 1.0 0.00949"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+
+      <geom type="box" pos="1.32 0 0.00518" size="0.06 1.0 0.00518"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="1.44 0 0.00638" size="0.06 1.0 0.00638"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="1.56 0 0.00759" size="0.06 1.0 0.00759"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="1.68 0 0.00880" size="0.06 1.0 0.00880"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="1.80 0 0.01001" size="0.06 1.0 0.01001"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="1.92 0 0.01121" size="0.06 1.0 0.01121"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+
+      <geom type="box" pos="2.04 0 0.00690" size="0.06 1.0 0.00690"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="2.16 0 0.00811" size="0.06 1.0 0.00811"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="2.28 0 0.00932" size="0.06 1.0 0.00932"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="2.40 0 0.01052" size="0.06 1.0 0.01052"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="2.52 0 0.01173" size="0.06 1.0 0.01173"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="2.64 0 0.01294" size="0.06 1.0 0.01294"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+
+      <geom type="box" pos="2.76 0 0.00863" size="0.06 1.0 0.00863"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="2.88 0 0.00983" size="0.06 1.0 0.00983"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.00 0 0.01104" size="0.06 1.0 0.01104"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.12 0 0.01225" size="0.06 1.0 0.01225"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.24 0 0.01346" size="0.06 1.0 0.01346"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.36 0 0.01466" size="0.06 1.0 0.01466"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+
+      <geom type="box" pos="3.48 0 0.01035" size="0.06 1.0 0.01035"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.60 0 0.01156" size="0.06 1.0 0.01156"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.72 0 0.01277" size="0.06 1.0 0.01277"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.84 0 0.01397" size="0.06 1.0 0.01397"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="3.96 0 0.01518" size="0.06 1.0 0.01518"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="4.08 0 0.01639" size="0.06 1.0 0.01639"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+
+      <geom type="box" pos="4.20 0 0.01208" size="0.06 1.0 0.01208"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="4.32 0 0.01328" size="0.06 1.0 0.01328"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="4.44 0 0.01449" size="0.06 1.0 0.01449"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="4.56 0 0.01570" size="0.06 1.0 0.01570"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="4.68 0 0.01691" size="0.06 1.0 0.01691"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="4.80 0 0.01811" size="0.06 1.0 0.01811"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+
+      <geom type="box" pos="4.92 0 0.01380" size="0.06 1.0 0.01380"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="5.04 0 0.01501" size="0.06 1.0 0.01501"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="5.16 0 0.01622" size="0.06 1.0 0.01622"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="5.28 0 0.01742" size="0.06 1.0 0.01742"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="5.40 0 0.01863" size="0.06 1.0 0.01863"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+      <geom type="box" pos="5.52 0 0.01984" size="0.06 1.0 0.01984"
+            contype="1" conaffinity="1" friction="1.0 0.01 0.0001"/>
+    </body>
+
+    <light pos="0 0 3" dir="0 0 -1" diffuse="1 1 1"/>
+    <camera name="main" pos="2.6 -2.6 1.35" xyaxes="0.7 0.7 0  -0.2 0.2 0.96"/>
+  </worldbody>
+</mujoco>
