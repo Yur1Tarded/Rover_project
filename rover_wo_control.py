@@ -2,10 +2,18 @@ import mujoco
 import numpy as np
 import time
 import matplotlib.pyplot as plt
+from pathlib import Path
  
-model = mujoco.MjModel.from_xml_path("scene_stairs_logs (2).xml")
+HERE = Path(__file__).resolve().parent
+SCENE = HERE / "scene_stairs_logs.xml"
+# SCENE = HERE / "scene_flat.xml"
+# SCENE = HERE / "scene_rocks.xml"
+# SCENE = HERE / "scene_sine.xml"
+# SCENE = HERE / "scene_saw.xml"
+ 
+model = mujoco.MjModel.from_xml_path(str(SCENE))
 data = mujoco.MjData(model)
- 
+
 import mujoco.viewer
 viewer = mujoco.viewer.launch_passive(model, data)
  
