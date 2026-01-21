@@ -31,8 +31,8 @@ python src/main.py
 По умолчанию запускается управление PID на сцене scene_stairs_logs.xml
 
 python src/main.py --mode w --scene src/assets/scene_stairs_logs.xml
-"--mode" - выбор режима управления w/wo (with/without) PID
-"--scene" - путь к .xml файлу с сценой
-"--torque" - момент на колесах (в режиме without PID)
+- `--mode` - выбор режима управления w/wo (with/without) PID
+- `--scene` - путь к .xml файлу с сценой
+- `--torque` - момент на колесах (в режиме without PID)
 
 Филиппов А.В.; Тихонов В.С.; Фомин В.М.
