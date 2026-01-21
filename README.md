@@ -1,5 +1,3 @@
-# Simrobots_project
-to be done
 # Rover_project — симуляция марсохода в MuJoCo
 
 ## Цель и задачи
